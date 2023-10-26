@@ -1,17 +1,26 @@
-# API
+Description
+This is the backend repository for the [Project Name] project. It was developed using Django to provide a solid foundation for efficient data manipulation.
 
-Welcome to the PDF Reader API repository! This API is designed to read PDF documents and provide responses based on the content. It uses a React.js frontend for user interaction, a Python backend for PDF processing, a PostgreSQL database for data storage, and Bun.js for testing.
+Key Features
+[List the main functionalities or features of the backend, for example: user management, API for interaction with the frontend, database integration, etc.]
 
+Getting Started
+Follow the steps below to start the backend locally:
 
-# Quick Start:
+Clone the Repository
 
-1 - Clone repository
+bash
+Copy code
+git clone https://github.com/your-username/project-name-backend.git
+cd project-name-backend
+Install Dependencies
 
-2 - Install requirements
+bash
+Copy code
+pip install -r requirements.txt
+Start the Development Server
 
-    - pip install -r requirements.txt
-
-3 - Run Django:
-
-    - python manage.py runserver
-    - Open chrome and paste it's url "localhost:8000/admin/"
+bash
+Copy code
+python manage.py runserver
+The backend will be available at http://localhost:8000.
