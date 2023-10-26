@@ -11,7 +11,7 @@ Welcome to the PDF Reader API repository! This API is designed to read PDF docum
 
     - pip install -r requirements.txt
 
-3 - Rodar o Django:
+3 - Run Django:
 
     - python manage.py runserver
-    - Abra no navegador o localhost:8000/admin/
+    - Open chrome and paste it's url "localhost:8000/admin/"
