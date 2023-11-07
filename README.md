@@ -19,6 +19,9 @@ Follow the steps below to start the backend locally:
 2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
+   pip install django-cors-headers
+   python manage.py migrate
+   python manage.py createsuperuser
    ```
 
 3. **Start the Development Server**
