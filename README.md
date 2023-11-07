@@ -12,8 +12,8 @@ Follow the steps below to start the backend locally:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/project-name-backend.git
-   cd project-name-backend
+   git clone https://github.com/API-Computabiliae/api
+   cd read_pdf
    ```
 
 2. **Install Dependencies**
