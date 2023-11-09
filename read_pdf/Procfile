@@ -1,1 +1,1 @@
-web: guricorn read_pdf.wsgi --log-file -
+web: gunicorn read_pdf.wsgi --log-file -
