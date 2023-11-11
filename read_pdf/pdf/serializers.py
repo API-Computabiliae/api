@@ -9,3 +9,9 @@ class PdfSerializer(serializers.Serializer):
 class UserSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField()
+
+
+class FileSerializer(serializers.Serializer):
+    name = serializers.CharField()
+    size = serializers.IntegerField()
+    file = serializers.FileField()
