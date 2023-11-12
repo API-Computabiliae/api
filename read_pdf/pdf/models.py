@@ -28,7 +28,12 @@ class File(models.Model):
 
     def __str__(self):
         return self.name
-    
-    class Meta:
-        verbose_name = 'File'
-        verbose_name_plural = 'Files'
+
+
+class Chat(models.Model):
+    file = models.ForeignKey(File, on_delete=models.CASCADE)
+    question = models.CharField(max_length=100)
+    answer = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.question
