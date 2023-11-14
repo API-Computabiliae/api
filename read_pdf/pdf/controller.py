@@ -1,7 +1,7 @@
 # importando as bibliotecas que serão utilizadas
-# import openai
 import PyPDF2
-import os, openai
+import os
+import openai
 from read_pdf.settings import SECRET_KEY
 
 #essa função serve para dividirmos o nosso pdf, e ficar mais fácil de procurar as respostas 
@@ -52,7 +52,6 @@ def find_matches(chunks, keywords, padding=500):
 
 # com as chunks necessárias, vamos obter as nossas repostas
 def answer_question(chunk, question):
-    breakpoint()
     openai.api_key = SECRET_KEY 
 
     prompt = f"""```

@@ -97,7 +97,6 @@ class ChatView(APIView):
 
         for chunk_id in matches.keys():
             chunk = chunks.content[chunk_id]
-            breakpoint()
             data = answer_question(chunk, question)
             break
 
