@@ -88,7 +88,7 @@ class ChatView(APIView):
 
         question = serializer.validated_data.get('message')
         name = serializer.validated_data.get('name')
-
+        
         file = File.objects.filter(name=name).first()
 
         chunks = Pdf.objects.filter(name=name).first()
@@ -96,11 +96,13 @@ class ChatView(APIView):
         matches = find_matches(chunks.content, question)
 
         for chunk_id in matches.keys():
-            chunk = chunks.content[chunk_id]
+            chunk = chunks.content #retirada do [chunk_id], fazia retornar apenas uma linha
             data = answer_question(chunk, question)
             break
-
-        chat = Chat.objects.create(file=file, question=question, answer=data)
-        chat.save()
+        
+        # Essa parte estava quebrando o a resposta. Pelo erro, não estava fazendo o insert
+        
+        #chat = Chat.objects.create(file=file, question=question, answer=data)
+        #chat.save()
         
         return Response(data=data, status=status.HTTP_200_OK)
